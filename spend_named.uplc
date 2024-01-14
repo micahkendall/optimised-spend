@@ -1,0 +1,139 @@
+(program
+  1.0.0
+  [
+    (lam
+      __tail_list_wrapped
+      [
+        (lam
+          __head_list_wrapped
+          [
+            (lam
+              __snd_pair_wrapped
+              [
+                (lam
+                  __fst_pair_wrapped
+                  [
+                    (lam
+                      __if_then_else_wrapped
+                      (lam
+                        script_withdrawal_credential
+                        (lam
+                          datum
+                          (lam
+                            redeemer
+                            (lam
+                              ctx
+                              [
+                                (lam
+                                  list_has
+                                  [
+                                    [
+                                      [ list_has list_has ]
+                                      script_withdrawal_credential
+                                    ]
+                                    [
+                                      (builtin unMapData)
+                                      [
+                                        __head_list_wrapped
+                                        [
+                                          __tail_list_wrapped
+                                          [
+                                            __tail_list_wrapped
+                                            [
+                                              __tail_list_wrapped
+                                              [
+                                                __tail_list_wrapped
+                                                [
+                                                  __tail_list_wrapped
+                                                  [
+                                                    __tail_list_wrapped
+                                                    [
+                                                      __snd_pair_wrapped
+                                                      [
+                                                        (builtin unConstrData)
+                                                        [
+                                                          __head_list_wrapped
+                                                          [
+                                                            __snd_pair_wrapped
+                                                            [
+                                                              (builtin
+                                                                unConstrData
+                                                              )
+                                                              ctx
+                                                            ]
+                                                          ]
+                                                        ]
+                                                      ]
+                                                    ]
+                                                  ]
+                                                ]
+                                              ]
+                                            ]
+                                          ]
+                                        ]
+                                      ]
+                                    ]
+                                  ]
+                                )
+                                (lam
+                                  self_list_has
+                                  (lam
+                                    list_search
+                                    (lam
+                                      list_list
+                                      (force
+                                        [
+                                          [
+                                            [
+                                              __if_then_else_wrapped
+                                              [
+                                                [
+                                                  (builtin equalsData)
+                                                  [
+                                                    __fst_pair_wrapped
+                                                    [
+                                                      __head_list_wrapped
+                                                      list_list
+                                                    ]
+                                                  ]
+                                                ]
+                                                list_search
+                                              ]
+                                            ]
+                                            (delay (con unit ()))
+                                          ]
+                                          (delay
+                                            [
+                                              [
+                                                [ self_list_has self_list_has ]
+                                                list_search
+                                              ]
+                                              [ __tail_list_wrapped list_list ]
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    )
+                                  )
+                                )
+                              ]
+                            )
+                          )
+                        )
+                      )
+                    )
+                    (force (builtin ifThenElse))
+                  ]
+                )
+                (force (force (builtin fstPair)))
+              ]
+            )
+            (force (force (builtin sndPair)))
+          ]
+        )
+        (force (builtin headList))
+      ]
+    )
+    (force (builtin tailList))
+  ]
+)
